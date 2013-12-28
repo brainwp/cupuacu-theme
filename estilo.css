@@ -1,0 +1,810 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #efefef;
+	font-family:tahoma, arial, sans-serif;
+	font-size:12px;	
+	margin: 0;
+
+	}
+	
+li a {
+	color:#deba68;
+	text-align: right;
+        font-size: 1.1em;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+li a:hover {
+	color:#fefefe
+}
+
+a {
+        font-size: 1.1em;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a:link {
+	color: #deba68;
+}
+a:visited {
+	color: #deba68;
+}
+a:active,
+a:hover {
+	color: #584825;
+}
+
+
+.menu-titulo  {
+	text-indent: -999999px;
+	position: absolute;
+}
+
+#home{
+	width: 1000px;
+	height: 962px;
+	margin:0 auto;	
+}
+	
+#conteudo-esq-home {
+	width: 633px;
+	height: 962px;
+	float: left;
+	border-right: solid 6px #dfceb2;
+}	
+
+#imagem-topo{
+	width: 633px;
+	height: 270px;
+	background: url(imagens/imagem-topo.jpg) no-repeat;
+}	
+
+#imagem-baixo {
+	width: 633px;
+	height: 692px;
+	position: absolute;
+	background: url(imagens/imagem-baixo.jpg) no-repeat;
+}	
+
+#menu-bumba-home {
+	width:311px;
+	height:224px;
+	margin:75px 0 0 316px;
+	border: solid 6px #dfceb2;
+	position: absolute;
+	background: url(imagens/bumba-hover.jpg) no-repeat;
+}	
+
+#menu-bumba-home ul {
+	margin: 40px 22px 0 0;
+}	
+
+#lancamento {
+	width: 244px;
+	height: 270px;
+	margin: 337px 0 0 354px;
+	position: absolute;
+	background: url(imagens/lancamento.png) no-repeat;
+}	
+
+.lancamento-text {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: absolute;
+    margin: 558px 0 0 385px;
+}
+
+#conteudo-dir-home {
+	background: url(imagens/conteudo-direito.jpg) no-repeat top center;
+	width: 361px;
+	height: 962px;
+	float: right;
+}	
+
+#mail-blog {
+	height:40px;
+	margin:24px 0 0 20px;
+	width:202px;
+}	
+
+#mail-home {
+    margin-top: 1px;
+	width: 50px;
+	height: 40px;
+	float: left;
+	background:url(imagens/mail.png) no-repeat;
+}
+
+.mail {
+	width: 50px;
+	height: 40px;
+	position:absolute;
+}
+
+
+#blog-link {
+	width: 130px;
+	height: 40px;
+	float: left;
+	margin-left: 21px;
+	margin-top: 2px;
+	background: url(imagens/blog-hover.png) no-repeat;
+}
+
+.link-blog{
+	width: 130px;
+	height: 40px;
+	position: absolute;
+}
+
+#menu-grupo-home ul, #menu-bumba-home ul, #menu-dancas-home ul {
+	margin: 83px 16px 0 0;
+}
+
+#menu-grupo-home {
+	width:318px;
+	height:224px;
+	margin:25px 0 0 -6px;
+	border: solid 6px #dfceb2;
+	background: url(imagens/grupo-hover.jpg) no-repeat;
+}	
+
+#menu-grupo-home ul {
+	margin: 134px 16px 0 0;
+}
+
+
+#slider_home {
+    margin: 11px 0 25px 14px;
+}
+
+#destaque_title  {
+	background: url(imagens/destaque_titulo.png) no-repeat;
+	text-indent: -999999px;
+	position: absolute;
+	width: 130px;
+	height: 25px;
+    margin: 25px 0 0 10px;
+	z-index: 50;
+}
+
+#menu-dancas-home {
+	width:318px;
+	height:224px;
+	margin:7px 0 0 -6px;
+	border: solid 6px #dfceb2;
+	background: url(imagens/dancas-hover.jpg) no-repeat;
+}	
+
+#menu-dancas-home ul {
+	margin: 134px 16px 0 0;
+}
+
+/* INTERNAS */
+
+#geral{
+	width: 1000px;
+	margin:0 auto;	
+}
+	
+#conteudo-esq {
+    background: url("imagens/sidebar-interna.jpg") repeat-y scroll 0 0 #DFCEB2;
+    border-right: 6px solid #DFCEB2;
+    float: left;
+    height: 838px;
+    width: 324px;
+}	
+
+#conteudo-esq li ,#conteudo-esq a {
+	color:#deba68;
+	text-align: right;
+	font-size: 17px;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#conteudo-esq-home li ,#conteudo-esq-home a {
+	color:#deba68;
+	text-align: right;
+	font-size: 17px;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}	
+
+ #conteudo-esq a:hover {
+	color:#fefefe;
+}
+
+ #conteudo-esq-home a:hover {
+	color:#fefefe;
+}
+
+#conteudo-dir-home li ,#conteudo-dir-home a {
+	color:#deba68;
+	text-align: right;
+	font-size: 17px;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+}	
+ #conteudo-dir-home a:hover {
+	color:#fefefe;
+}
+
+#home-link{
+	width: 254px;
+	height: 80px;
+	position: absolute;
+	margin: 55px 0 0 30px;
+}
+
+.home-link{
+	width: 254px;
+	height: 80px;
+	position: absolute;
+}
+
+.home-link:hover{
+	background: url(imagens/home.png);
+}
+
+#mail {
+	width: 50px;
+	height: 40px;
+	float: right;
+	margin: 128px 4px 0 0;
+	background:url(imagens/mail.png) no-repeat;
+	}
+
+
+#menu-grupo {
+	width:274px;
+	height:158px;
+    margin: 181px 0 21px 44px;
+	border: solid 6px #dfceb2;
+	background: url(imagens/grupo-interna.jpg) no-repeat -5px -6px;;
+}	
+
+#menu-grupo ul, #menu-bumba ul, #menu-dancas ul {
+	margin: 83px 16px 0 0;
+}
+
+.link-grupo {
+	position: absolute;
+	width:274px;
+	height: 60px;
+}
+
+
+#menu-bumba {
+	width:274px;
+	height:158px;
+	margin:0 0 21px 44px;
+	border: solid 6px #dfceb2;
+	background: url(imagens/bumba-interna.jpg) no-repeat -5px -6px;
+}	
+
+.link-bumba {
+	position: absolute;
+	width:274px;
+	height:76px;
+}
+
+#menu-dancas{
+	width:274px;
+	height:158px;
+	margin:0 0 21px 44px;
+	border: solid 6px #dfceb2;
+	background: url(imagens/dancas-interna.jpg) no-repeat -5px -6px;
+}
+
+.link-dancas {
+	position: absolute;
+	width:274px;
+	height:60px;
+}
+
+#menu-pag-dancas-box {
+    background: none repeat scroll 0 0 transparent;
+    float: right;
+    height: 170px;
+    margin: 10px 45px 0 0;
+    width: 435px;
+}
+
+.menu-pag-dancas {
+	margin: 0;
+	padding: 0;
+}
+
+.menu-pag-dancas li  {
+
+	color:#deba68;
+	text-align: right;
+	font-size: 17px;
+	list-style: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-bottom: 5px;
+	}
+	
+#menu-pag-dancas-box ul {
+	margin: 0;
+	padding: 0;
+}
+	
+#link-blog {
+	width: 130px;
+	height: 40px;
+	position: absolute;
+	margin: 10px 0 0 142px;
+	background: url(imagens/blog-hover.png);
+}
+
+.link-blog{
+	width: 130px;
+	height: 40px;
+	position: absolute;
+}
+
+#conteudo-dir {
+    background: url(imagens/fundo-conteudo-dir.jpg) repeat-y scroll center top transparent;
+    float: right;
+    width: 670px;
+}
+
+#conteudo-dir-dancas {
+	background: url(imagens/bg-dancas.jpg) repeat-y scroll center top transparent;
+	width: 670px;
+	float: right;
+}	
+
+#video {
+	width:342px;
+	height:208px;
+    margin: 15px 0 0;
+	float: left;
+	background: url(imagens/video.jpg) no-repeat; 
+}
+
+.link-video {
+	width:342px;
+	height:208px;
+	margin: -4px;
+	position: absolute;
+}
+
+.link-video:hover {
+	border: solid 4px #dfceb2;
+}
+
+#video-caixa-bg{
+    background: none repeat scroll 0 0 #DDC283;
+    height: 208px;
+    margin: 15px 0 15px 350px;
+    width: 196px;
+	position: inherit;
+	z-index: 0;
+}
+
+#video-botao {
+	width:152px;
+	height:57px;
+	margin: 12px 0 0 23px;
+	float: left;
+	background: url(imagens/botao-video.png);
+}
+
+.link-botao {
+	position:absolute;
+	width: 152px;
+	height:57px;
+}
+
+#video-descricao {
+    float: left;
+    font-size: 11px;
+    height: 136px;
+    margin: 3px 0 0 13px;
+    width: 180px;
+	color: #333;
+	}
+
+#cont-geral-bg {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 30px auto;
+    width: 604px;
+	min-height: 778px;
+    z-index: 0;
+	opacity:0.85;
+	-moz-opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+
+#cont-geral-bg-sobre {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 30px auto;
+    width: 604px;
+	min-height: 778px;
+    z-index: 0;
+	opacity:0.85;
+	-moz-opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+#cont-geral-bg-dancas {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 290px auto 40px;
+    min-height: 508px;
+    width: 604px;
+    z-index: 0;
+	opacity: 0.85;
+	-moz-opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+#cont-geral {
+	width: 604px;
+	height: 533px;
+	position:absolute;
+	z-index: 1;
+	margin: 271px 0 0 34px;
+}
+
+#cont-geral-sobre {
+    margin: 0 auto;
+    padding: 40px 0 20px;
+    width: 554px;
+    z-index: 1;
+}
+
+#cont-geral-fotos {
+	width: 604px;
+	height: 680px;
+	position:absolute;
+	z-index: 1;
+	margin: 80px 0 0 34px;
+}
+
+#cont-links {
+    height: 50px;
+    margin-left: 225px;
+    margin-top: -13px;
+    position: absolute;
+    text-align: right;
+    width: 330px;
+}
+
+#cont-links.fundadores {
+	position: absolute;
+	width: 376px;
+	margin: 15px 0 0 275px;
+	z-index: 2;
+}
+
+#cont-links.integrantes {
+	position: absolute;
+	width: 320px;
+	margin: 15px 0 0 290px;
+	z-index: 2;
+}
+
+#cont-links.sobre-nos {
+	z-index: 2;
+}
+
+#cont-links li, #cont-links a{
+	display: inline;
+	color: #91441E;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#cont-links a:hover{
+	color:#be8c1c;
+	text-transform: uppercase;
+}
+
+.cont-links {
+	padding: 0;
+	letter-spacing: -0.2px;
+}
+
+.espacador {
+	margin: 0 3px;
+}
+
+#cont-texto {
+	width:550px;
+	height:421px;
+	margin:75px 0 0 26px;
+	position: absolute;
+	z-index: 2;
+}
+
+#cont-texto p{
+	font-size: 1.2em;
+}
+
+
+#cont-fotos {
+	width:604px;
+	height: 670px;
+	margin:30px 0 0 0;
+	position: absolute;
+	z-index: 2;
+}
+
+#cont-img.integrantes {
+	margin:90px 0 0 30px;
+}
+
+
+.cont-foto{
+	float:left;
+	padding:15px;
+}
+
+#cont-titulo-dancas {
+    background: url("imagens/titulo-dancas-brasileiras.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 56px;
+    margin: 35px 35px 0 0;
+    text-indent: -99999px;
+    width: 400px;
+}
+
+/* ------------------------ comeca pag fundadores -------------------------- */
+
+#cont-geral-bg-funda {
+	width: 615px;
+	height: 785px;
+	position:absolute;
+	z-index: 0;
+	margin: 25px 0 0 28px;
+	background: #fff;
+	opacity:0.70;
+	-moz-opacity: 0.70;
+	filter: alpha(opacity=70);
+}
+
+#cont-geral-bg-integra{
+	width: 615px;
+	height: 760px;
+	position:absolute;
+	z-index: 0;
+	margin: 35px 0 0 28px;
+	background: #fff;
+	opacity:0.70;
+	-moz-opacity: 0.70;
+	filter: alpha(opacity=70);
+}
+
+
+#cont-geral-funda {
+    height: 750px;
+    margin: 25px 0 0 28px;
+    position: absolute;
+    width: 610px;
+    z-index: 1;
+	}
+
+#cont-geral-integra {
+    height: 750px;
+    margin: 40px 0 0 28px;
+    position: absolute;
+    width: 610px;
+    z-index: 1;
+	}
+	
+
+
+#foto_fundadores {
+	float: left;
+	width: 132px;
+	height: 138px;
+	margin: -4px 8px 0 0;
+	background: #91441e;
+}
+
+#foto1 {
+	float: left;
+	width: 132px;
+	height: 170px;
+	margin: 3px;
+	background: #91441e;
+}
+
+#foto1:hover {
+	background: #c35823;
+}
+
+.link-foto-fundadores {
+	width: 132px;
+	height: 158px;
+	position: absolute;
+}
+	
+.img-fundadores {
+	margin: 6px;
+}
+
+.nome-fundadores {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+/* ------------------------ comeca pag fundadores -------------------------- */
+
+
+#foto-integrantes {
+	float: left;
+	width: 94px;
+	height: 99px;
+	margin: 8px;
+}
+
+.img-integrantes {
+	border: 4px solid #dec185;
+}
+
+#paginas-nav {
+	position: absolute;
+	height: 40px;
+	float:right;
+	margin-right: 54px;
+	font-size: 17px;
+	bottom: 0px;
+	left: 200px;
+}
+
+.paginas-nav {
+	color: #91441e;
+	text-decoration:none;
+	margin: 0 10px;
+	padding: 0 4px;
+}
+
+.paginas-nav:hover {
+	background: #dec185;
+	}
+
+/* TOOLTIP */
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 2px solid #705e39;
+	font-size: 11px;
+	background-color: #cea756;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+#tooltip h3, #tooltip div { 
+	margin: 0;
+	color: #FFF !important;
+	font-family: tahoma, arial, sans-serif;
+	text-transform: uppercase;
+ }
+
+/* RODAP� */
+
+#rodape {
+	height: 70px;
+	width: 1000px;
+	float: left;
+	background: url(imagens/rodape.jpg) no-repeat; 
+}
+
+#rodape a{
+	color: #91441E;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#rodape a:hover{
+	color:#cc6600;
+	text-transform: uppercase;
+}
+
+#centro-pop{
+	color: #91441e;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: right;
+	float: left;
+	width: 190px;
+	height: 40px;
+	margin: 25px 0 0 35px;
+	font-size: 0.9em;
+}
+
+#boi{
+	float: left;
+	width: 112px;
+	height: 70px;
+	margin-left:10px;
+	background: url(imagens/boi.png)
+}
+
+#fundado {
+	color: #91441e;
+	font-size: 18px;
+	text-transform: uppercase;
+	float: left;
+	width: 188px;
+	height: 40px;
+	margin: 27px 0 0 7px;
+}
+
+#apoio {
+	color: #91441e;
+	font-size: 16px;
+	text-transform: uppercase;
+	float: left;
+	width: 60px;
+	height: 25px;
+	margin: 28px 0 0 80px;
+}
+
+#proac-gov {
+	float: left;
+	width: 220px;
+	height: 40px;
+	margin: 18px 0 0 6px;
+	background: url(imagens/proac-gov.png) no-repeat;
+}
+
+a.link_proac {
+	width: 70px;
+	height: 40px;
+	position: absolute;
+}
+
+a.link_gov {
+	height: 40px;
+    margin-left: 75px;
+    position: absolute;
+    width: 135px;
+}
+
+#ete {
+	float: left;
+	width: 48px;
+	height: 40px;
+	margin: 17px 0 0 26px;
+	background: url(imagens/logo-ete.png) no-repeat;
+}
+
+a.link_ete {
+	height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+/* NOVOS */
+
+.entry-title {
+    color: #584825;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+	    margin-bottom: 10px;
+	}
+
