@@ -5,7 +5,6 @@
 	<div id="menu-bumba-home">
 		<h1 class="menu-titulo">Bumba Meu Boi</h1>
 		<ul>
-		<li><a href="<?php echo home_url( '/renascimento' ); ?>">renascimento</a></li>
 		<li><a href="<?php echo home_url( '/batizado' ); ?>">batizado</a></li>
 		<li><a href="<?php echo home_url( '/morte' ); ?>">morte</a></li>
 		</ul>
@@ -14,7 +13,7 @@
 	<div id="lancamento">
 	<h1 class="menu-titulo">Lancamento</h1>
 	</div>
-	<p class="lancamento-text">CD todo canto danCa</p>	
+		<a href="<?php echo home_url( '/cds/todo-canto-danca' ); ?>"><p class="lancamento-text">CD todo canto danCa</p></a>	
 
 </div><!-- fecha conteudo-esq-home -->	
 
