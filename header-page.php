@@ -63,9 +63,6 @@ Shadowbox.init({
 	
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
-   mp3j_addscripts(); 
- ?>
-<?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
 	 */

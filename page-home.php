@@ -14,7 +14,7 @@
 	<div id="lancamento">
 	<h1 class="menu-titulo">Lan�amento</h1>
 	</div>
-	<p class="lancamento-text">CD todo canto danCa</p>
+	<a href="<?php echo home_url( '/cds/todo-canto-danca' ); ?>"><p class="lancamento-text">CD todo canto danCa</p></a>
 </div><!-- fecha conteudo-esq-home -->	
 
 <div id="conteudo-dir-home">
