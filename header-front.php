@@ -86,15 +86,17 @@
 <script>
 $(function(){
  	$('#slider').anythingSlider({
-					easing          : 'swing',
-					resizeContents	: false,
-					expand			: false, 
-					buildArrows     : true,  
-					buildNavigation	: false,
-					onSlideComplete : function(slider){
-						// alert('Welcome to Slide #' + slider.currentPage);
-					}
-				});
+	expand       : true,
+	autoPlay     : false,
+	buildArrows  : true,
+	buildStartStop : false,
+	buildNavigation : false,
+	/*appendControlsTo: $('#nav'),*/
+	appendForwardTo     : null,
+	appendBackTo        : null
+	});
+
+
 });
 </script>
 </head>
@@ -121,20 +123,29 @@ $(function(){
 			</div><!-- #header -->
 		</div><!--linha header-->
 		<div id="linha-slider" >
-			<?php
-			$args = array(
-		        'post_type' => 'slide',
-		    );
-		    $slider_query = new  WP_Query( $args );
-			?>
-			<ul id="slider" style="width:2000px">
-		  		<?php while ( $slider_query->have_posts() ) : $slider_query->the_post();
-					echo '<li>';
-					the_post_thumbnail('slider-thumb');
-					echo '</li>';
-				endwhile;
-				?>
-			</ul>
+				<!-- Expanding AnythingSlider 100% width -->
+			<div id="nav"></div>
+			  <div id="anythingWrap">
+				<ul id="slider">
+					<li>
+			      <div class='embed-container'><
+			        <img width="2048" height="1366" src="http://rede.com.br/cupuacu/wp-content/uploads/sites/3/2014/09/10679700_811612952224404_8811728882063979686_o.jpg" class="attachment-slider wp-post-image" alt="10679700_811612952224404_8811728882063979686_o" >
+			      </div>
+			    </li>
+					<li>
+			      <div class='embed-container'><iframe src='https://player.vimeo.com/video/12155835' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+			    </li>
+					<li>
+			      <img src="http://a.vimeocdn.com/si/blog/ins_annaul-review2_newsletter.gif" />
+			    </li>
+					<li>
+			    <div class='embed-container'><iframe src='https://player.vimeo.com/video/84391929' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+			    </li>
+				</ul>
+			</div>
+
+				<!-- END AnythingSlider -->
+			
 		</div><!--linha slider-->
 		<div class="limpa"></div>
 		<div id="conteudo-front">
