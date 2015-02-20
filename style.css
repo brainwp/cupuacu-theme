@@ -336,6 +336,9 @@ textarea {
 -------------------------------------------------------------- */
 
 #header {
+	max-width:1280px;
+	height:110px;
+	margin:0 auto;
 	padding: 0;
 }
 #site-title {
@@ -1292,6 +1295,7 @@ code {
 		border-bottom: 2pt solid #000;
 		padding-bottom: 18pt;
 	}
+	
 	#colophon {
 		border-top: 2pt solid #000;
 	}
@@ -1361,5 +1365,201 @@ code {
 	}
 	.home .sticky {
 		border: none;
+	}
+}
+
+/*menu*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+
+
+
+
+
+
+/* Starter CSS for Menu */
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+}
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+	line-height: 50px;
+
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: 0;
+  left: 190px;
+  width: 190px;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+#cssmenu ul ul {
+  margin-top: 0;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+	text-align:left;
+}
+
+/* Custom CSS Styles */
+#cssmenu {
+  	font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  	font-size: 12px;
+	width:70%;
+	vertical-align:top;
+	height:110px;
+}
+#cssmenu > ul {
+  display: inline-block;
+}
+/*#cssmenu:after,*/
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu ul {
+  text-transform: uppercase;
+}
+#cssmenu ul ul {
+	padding-left:20px;
+  text-transform: none;
+  min-width: 190px;
+}
+#cssmenu ul ul a {
+  background: #1b0e00;
+  color: #ffe6be;
+  line-height: 150%;
+  padding: 16px 20px;
+  font-size: 12px;
+}
+#cssmenu ul ul ul {
+  border-top: 0 none;
+}
+#cssmenu ul ul li {
+  position: relative;
+
+}
+#cssmenu ul ul li:first-child > a {
+}
+#cssmenu ul ul li:hover > a {
+  background: #1b0e00;
+  color: #ffe6be;
+}
+#cssmenu ul ul li.has-sub > a:after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a {
+  color: #ffe6be;
+}
+#cssmenu ul li.has-sub > a:after {
+  margin-left: 5px;
+}
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu a {
+  color: #ffe6be;
+  padding: 0 20px;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+  font-size: 12px;
+}
+
+
+
+#front-page #header div{
+	display:inline-block;
+	background: #311901;
+	float:left;
+	height:110px;
+}
+#logo{
+	width:30%;
+}
+#logo img{
+	width:85%;
+	margin:0 5% 0 10%
+}
+.frame {
+    height: 110px;      /* equals max image height */
+    white-space: nowrap;
+    text-align: center; 
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.frame img{
+	display:inline-block;
+}
+.frame img, .frame ul {
+    vertical-align: middle;
+}
+@media (max-width: 1280px) {
+	#logo{
+		width:20%;
+	}
+	#cssmenu{
+		width:80%;
+	}
+}
+@media (max-width: 1040px) {
+	#cssmenu a {
+	color: #ffe6be;
+	padding: 0 10px;
 	}
 }

@@ -1,4 +1,4 @@
-<?php /* Template Name: Home Player*/ get_header('home'); ?>
+<?php /* Template Name: Home Player*/ get_header('front'); ?>
 <div id="conteudo-esq-home">
 	<div id="imagem-topo"></div>
 	<div id="imagem-baixo"></div>
@@ -70,4 +70,4 @@
 </div><!-- fecha conteudo-dir-home -->
 
 <?php /* get_sidebar(); */ ?> 
-<?php get_footer( 'page'); ?>
+<?php get_footer( 'front'); ?>
