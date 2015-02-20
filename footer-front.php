@@ -12,7 +12,8 @@
 		</div><!-- fecha rodape-front -->
 
 	</div><!-- .hfeed -->
-
+	<script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/wallopslider.js"></script>
+ 	<script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/script.js"></script>
 <?php wp_footer();?>
 </body>
 </html>

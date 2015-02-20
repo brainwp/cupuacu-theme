@@ -1569,7 +1569,9 @@ code {
 	background-size:cover;
 
 }
-
+#slider, #slider li {
+    width: 1247px;
+}
 
 
 
@@ -1606,7 +1608,7 @@ body{
 /* change the ID & dimensions to match your slider */
 #anythingWrap {
 	width: 100%;
-  height:540px;
+  
 	list-style: none;
 	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
 	overflow-y: auto;
