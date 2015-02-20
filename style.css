@@ -1394,11 +1394,10 @@ code {
   z-index: 597;
 }
 #cssmenu ul li {
-  float: left;
-  min-height: 1px;
-  vertical-align: middle;
-	line-height: 50px;
-
+	float: left;
+  	min-height: 1px;
+  	vertical-align: middle;
+	line-height: 45px;
 }
 #cssmenu ul li.hover,
 #cssmenu ul li:hover {
@@ -1514,7 +1513,7 @@ code {
 }
 #cssmenu > ul > li > a {
   line-height: 48px;
-  font-size: 12px;
+	font-size:1.1em;
 }
 
 
@@ -1549,6 +1548,10 @@ code {
 .frame img, .frame ul {
     vertical-align: middle;
 }
+#blog-front{
+	height:50px;
+	margin-left:10px;
+}
 @media (max-width: 1280px) {
 	#logo{
 		width:20%;
@@ -1562,4 +1565,23 @@ code {
 	color: #ffe6be;
 	padding: 0 10px;
 	}
+	#cssmenu > ul > li > a {
+		font-size:1em;
+	}
+	#blog-front{
+		height:43px;
+	}
+	#mail-front{
+		width:32px;
+	}
+}
+@media (max-width: 900px) {
+	
+	#blog-front{
+		height:40px;
+		margin-left:5px;
+	}
+	#mail-front{
+		width:28px;
+	}	
 }
