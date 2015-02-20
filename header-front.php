@@ -85,6 +85,13 @@
 	 */
 	wp_head();
 ?>
+<script>
+$(function(){
+ $('#slider')
+   .anythingSlider() // add any non-default options here
+   .anythingSliderVideo(); // only add this if your slider includes supported videos (new v1.9)
+});
+</script>
 </head>
 
 <body id="front-page" <?php body_class(); ?>>
@@ -106,6 +113,18 @@
 			
 		</div>
 	</div><!-- #header -->
-
+	<?php
+	$args = array(
+	        'post_type' => 'slide',
+	    );
+	    $slider_query = new  WP_Query( $args );
+	?>
+	<ul id="slider">
+	  	<?php while ( $slider_query->have_posts() ) : $slider_query->the_post();
+			echo '<li>';
+			the_post_thumbnail('slider');
+			echo '</li>';
+		endwhile;?>
 	
+	 </ul>
 <div id="home">

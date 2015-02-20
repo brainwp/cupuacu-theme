@@ -130,3 +130,76 @@ function adiciona_itens ( $items, $args ) {
 		register_post_type( 'slide', $args );
 	}
 	add_action( 'init', 'slider_cpt' );
+/////////////////////////////////////////////////////////////////////////
+
+	/////////////////////////////////////////////////////////////////////////////
+	//slide_fotos para exibir posts com thumbnail como shotcode
+	// remove_filter( 'the_content', 'wpautop' );
+
+		function willow_loop_shortcode( $atts ) {
+		    extract( shortcode_atts( array(
+		        'tipo' => 'slide',
+				'categoria'=> '',
+				'tag' => '',
+				'pula'=> '',
+		    ), $atts ) );
+		   $args = array(
+		        'post_type' => $tipo,
+				'category' => $categoria,
+				'offset' => $pula,
+				'tag'    => $tag,
+			
+		    );
+		    $willow_query = new  WP_Query( $args );
+			$num=$willow_query->post_count;
+			$count=0;
+			echo '<div id="myCarousel" class="col-sm-6 carousel slide" data-ride="carousel">';
+
+
+			$count=0;
+		    echo '</ol>';
+			echo '<div class="carousel-inner">';
+			while ( $willow_query->have_posts() ) : $willow_query->the_post();
+		    	echo '<div class="item';
+					if ($count == 0){
+						echo ' active';
+					}
+					echo'">
+						<div class="img-carousel">';
+				    		the_post_thumbnail('slider');
+						echo '</div>
+						<div class="carousel-caption ">
+			           	  	<div class="titulo-carousel">
+				           		<h3>';
+									the_title();
+								echo '</h3>
+							</div>
+				 		</div>';
+				echo '</div><!--item-->';
+
+				$count++;
+		    endwhile;
+
+		    wp_reset_query();
+			echo '</div>
+			<!-- Carousel items -->
+
+
+		    <!-- Carousel nav -->
+		    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		        <span class="glyphicon glyphicon-chevron-left"></span>
+		    </a>
+		    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+		        <span class="glyphicon glyphicon-chevron-right"></span>
+		    </a>
+		</div><!--carousel-inner-->';
+
+		}
+		add_shortcode('slide_fotos', 'willow_loop_shortcode');
+	// fim do slide_fotos
+
+	///////////////////////////////////////////////////////////////////
+	//////////////////shortcode [slider]///////////////////////////////////   /
+	/////////////////////////////////////////////////////////////////////////////
+
+

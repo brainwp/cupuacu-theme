@@ -1513,7 +1513,7 @@ code {
 }
 #cssmenu > ul > li > a {
   line-height: 48px;
-	font-size:1.1em;
+	font-size:1.2em;
 }
 
 
@@ -1558,6 +1558,9 @@ code {
 	}
 	#cssmenu{
 		width:80%;
+	}
+	#cssmenu > ul > li > a {
+		font-size:1.1em;
 	}
 }
 @media (max-width: 1040px) {
