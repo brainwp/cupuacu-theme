@@ -84,8 +84,11 @@ class CSS_Menu_Maker_Walker extends Walker {
 
 add_filter( 'wp_nav_menu_items', 'adiciona_itens', 10, 2 );
 function adiciona_itens ( $items, $args ) {
-        $items .= '<li><img id="blog-front" src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></li>';
-		$items .= '<li><img id="mail-front" src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
+		$items2 = $items;
+		$items 	= '<li id="mail-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
+		$items .= '<li id="blog-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></li>';
+		$items .= $items2;
+        
     return $items;
 }
 

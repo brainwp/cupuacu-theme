@@ -136,5 +136,5 @@
 			      <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next">Next</button>
 			    </div>
 		</div><!--linha slider-->
-		<div class="limpa"></div>
+		<div class="limpa" id="hr-header"></div>
 		<div id="conteudo-front">
