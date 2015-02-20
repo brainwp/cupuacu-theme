@@ -88,3 +88,45 @@ function adiciona_itens ( $items, $args ) {
 		$items .= '<li><img id="mail-front" src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
     return $items;
 }
+
+
+
+/////////CPT slider
+	function slider_cpt() {
+		$labels = array(                   
+			'name'               => 'Fotos Slider',
+			'singular_name'      => 'Foto',
+			'menu_name'          => 'Fotos Slider',
+			'name_admin_bar'     => 'Foto Slider',
+			'add_new'            => 'Adicionar nova',
+			'add_new_item'       => 'Adicionar nova Foto',
+			'new_item'           => 'Nova Foto',
+			'edit_item'          => 'Editar Foto',
+			'view_item'          => 'Ver Foto',
+			'all_items'          => 'Todas as Fotos',
+			'search_items'       => 'Buscar Fotos',
+			'parent_item_colon'  => '',
+			'not_found'          => 'Nenhuma foto encontrada',
+			'not_found_in_trash' => 'Nenhuma foto encontrada na lixeira' 
+		);
+
+		$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'slide' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => null,
+			
+			'menu_icon' => 'dashicons-format-gallery',
+	  		'supports' => array( 'title', 'thumbnail' )
+		);
+
+		register_post_type( 'slide', $args );
+	}
+	add_action( 'init', 'slider_cpt' );
