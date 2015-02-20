@@ -1552,6 +1552,29 @@ code {
 	height:50px;
 	margin-left:10px;
 }
+
+#front-page .anythingSlider{
+	padding:0px;
+}
+.limpa{
+	clear:both;
+	float:none;
+}
+#linha-header{
+	background:#311901;
+}
+#linha-slider{
+	background:url('imagens/linha-slider-fundo.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+
+}
+#slider, #slider li {
+    width: 100%;
+	height:100%;
+}
+
+
 @media (max-width: 1280px) {
 	#logo{
 		width:20%;
