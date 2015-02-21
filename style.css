@@ -1,5 +1,5 @@
 /*
-Theme Name: Site do Grupo Cupuacu
+Theme Name: Site do Grupo Cupuacu - Nova Home
 Template: twentyten
 Theme URI: http://wordpress.org/
 Description: Tema do Site do Grupo Cupuacu
@@ -1629,7 +1629,7 @@ code {
 	font-weight:lighter;
 	margin:0;
 	line-height:40px;
-	padding:0 0 0 16px;
+	text-align:center;
 }
 .hexagon:before {
 	content:" ";
@@ -1694,12 +1694,12 @@ code {
 }
 #linha4{
 	background:url('imagens/linha4-fundo.png');
-	
+	background-size: cover;	
 }
 
 #linha4 h1{
 	width:33%;
-	line-height: 86px;
+	line-height: initial;
 }
 #linha4  p{
 	width:40%;
@@ -1837,7 +1837,8 @@ margin-top:-90px;
 
 
 #coluna1 img{
-
+		max-width:280px;
+		width:100%;
 		position:relative;
 		z-index:99;
 }
@@ -1879,6 +1880,8 @@ margin-top:-90px;
 	vertical-align: bottom;
 	margin-bottom: -40px;
 	float: right;
+	width:100%;
+	max-width:380px;
 	
 }
 #coluna3{
@@ -1917,7 +1920,7 @@ margin-top:-90px;
 		font-size:1.2em;
 	}
 	#cssmenu a {
-		padding: 0 17px;
+		padding: 0 13px;
 	}
 	#menu-menu-front #mail-front{
 		margin-left:3%;
@@ -1928,6 +1931,22 @@ margin-top:-90px;
 	}
 }
 @media (max-width: 1040px) {
+	.interno h1{
+		font-size:42px;
+	}
+	
+	.hexagon{
+		height:30px;
+	}
+	.hexagon:before {
+		border-left: 16px solid #e9c284;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+	}
+	.hexagon h3{
+		line-height: 29px;
+		font-size:20px;
+	}
 	#logo{
 		width:23%;
 	}
@@ -1950,23 +1969,51 @@ margin-top:-90px;
 		font-size: 25px;
 	}
 	.ativo:before {
-	width: 12px;
-	height: 21px;
-	background-size: contain;
-	}
+		width: 12px;
+		height: 21px;
+		background-size: contain;
+		}
 	#front-page p {
 		font-size:18px;
 	}
-	.linha h1{
-		font-size: 53px;
-		
-	}
+	
 	#linha5 li{
 		margin-left:14px;
 	}
+	.coluna-footer{
+		width:48%;
+	}
 }
 @media (max-width: 900px) {
-	
+	.interno h1{
+		font-size:30px;
+	}
+	.hexagon{
+		height:24px;
+	}
+	.hexagon:before {
+		border-left: 16px solid #e9c284;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+	}
+	.hexagon h3{
+		line-height: 25px;
+		font-size:14px;
+		text-align:center;
+	}
+	#logo{
+		width:18%;
+	}
+	#cssmenu{
+		width:82%;
+	}
+	#cssmenu > ul > li > a {
+	font-size: 1em;
+	}
+	#blog-front img, 	#mail-front img{
+		max-width:70px;
+		width:100%;
+	}
 	#blog-front{
 		height:40px;
 		margin-left:5px;
@@ -1974,4 +2021,20 @@ margin-top:-90px;
 	#mail-front{
 		width:28px;
 	}	
+	#front-page p {
+	font-size: 16px;
+	}
+	#conteudo-dancas{
+		width:55%;
+	}
+	#selecao-danca{
+		width:45%;
+	}
+	#selecao-dancas h2 {
+		font-size: 20px;
+	}
+	#selecao-dancas ul {
+		width: 91%;
+	}
+	
 }
