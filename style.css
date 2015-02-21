@@ -1569,7 +1569,7 @@ code {
 	clear:both;
 	float:none;
 }
-#hr-header {
+.hr {
 	background: url('imagens/hr-header.png');
 	width: 100%;
 	height: 29px;
@@ -1596,21 +1596,22 @@ code {
 	max-width:1247px;
 	margin:0 auto;
 	display:block;
+	padding:40px 40px;
+	
 }
 #linha1{
 	background:#e2af70;
 	height:150px;
 	margin-top:-10px;
-	padding:10px 0 0 25px;
 }
 .linha h1 {
 	margin:0;
-	line-height:160px;
 	color:#311901;
 	font-weight:bold;
-	margin-top:-10px;
 	display:inline-block;
 	font-size:57px;
+	line-height: initial;
+	
 }
 .hexagon {
 	display:inline-block;
@@ -1644,9 +1645,7 @@ code {
 	color:#391302;
 
 }
-#linha2 p {
-	padding:25px 0 0 25px;
-}
+
 .inline-block{
 	display:inline-block;
 }
@@ -1697,10 +1696,7 @@ code {
 	background:url('imagens/linha4-fundo.png');
 	
 }
-#linha4 .interno{
-	padding:60px 0 60px 25px;
-	
-}
+
 #linha4 h1{
 	width:33%;
 	line-height: 86px;
@@ -1708,7 +1704,10 @@ code {
 #linha4  p{
 	width:40%;
 	display:inline-block;
+}
+p{
 	line-height:30px;
+	
 }
 #linha4 .interno h1{
 	width:25%;
@@ -1721,7 +1720,56 @@ code {
 	vertical-align: top;
 	
 }
+#linha4 .hr{
+	margin-top:-10px;
+}
+#linha5{
+	background:url('imagens/trabalhos-fundo.png');
+	
+}
+#linha5 h1{
+	line-height:70px;
+	display:block;
+	margin-bottom:30px;
+}
+#linha5 p{
+	width:33%;
+	margin-top:20px;
+	display:inline-block;
+	vertical-align: top;
+}
+#linha5 li, #linha5 ul {
+	display:inline-block;
+	float:right;
+}
+#linha5 ul{
+	margin: 20px 0 0 36px;
+	width:60%;
+}
+#linha5 li{
+	margin-left:20px;
+	width:28%;
 
+}
+#linha5 li img{
+	width:100%;
+	height:auto;
+}
+.capa{
+	margin-bottom:15px;
+	
+}
+#linha5 li:hover .capa{
+	opacity:0.2;
+}
+#linha5 li {
+	font-size:15px;
+	text-align:center;
+}
+#linha6{
+	height:665px;
+	background:url('imagens/linha6-fundo.png');
+}
 
 
 
@@ -1793,6 +1841,11 @@ code {
 	.linha h1{
 		font-size: 53px;
 		
+	}
+	#linha5 li{
+		margin-right:14px;
+	
+
 	}
 }
 @media (max-width: 900px) {

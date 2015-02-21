@@ -43,10 +43,32 @@
 					</p>
 					<img class='inline-block' src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/img-ciclo.png">
 				</div><!--fecha interno-->
+				<div class="limpa hr" ></div>
+				
 			</div><!-- fecha linha4-->
 
 			<div id="linha5" class="linha">
 				<div class="interno">
+					<h1 class='inline-block' >Trabalhos do Grupo</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. 
+					</p>
+					<?php
+					$count=0;
+					$args = array(
+					    'post_type' => 'trabalho',
+					);
+					$trabalho_query = new  WP_Query( $args );
+					?>
+				      <ul>
+						<?php while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
+							echo '<li><div class="capa">';
+							the_post_thumbnail('');
+							echo '</div>';
+							the_title();
+							echo '</li>';
+						endwhile;
+						?>
 				</div><!--fecha interno-->
 			</div><!-- fecha linha5-->
 			

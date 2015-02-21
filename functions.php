@@ -135,6 +135,47 @@ function adiciona_itens ( $items, $args ) {
 	add_action( 'init', 'slider_cpt' );
 /////////////////////////////////////////////////////////////////////////
 
+	/////////CPT trabalhos
+		function trabalhos_cpt() {
+			$labels = array(                   
+				'name'               => 'Trabalhos',
+				'singular_name'      => 'Trabalho',
+				'menu_name'          => 'Trabalhos',
+				'name_admin_bar'     => 'Trabalhos',
+				'add_new'            => 'Adicionar novo',
+				'add_new_item'       => 'Adicionar novo Trabalho',
+				'new_item'           => 'Novo Trabalho',
+				'edit_item'          => 'Editar Trabalho',
+				'view_item'          => 'Ver Trabalho',
+				'all_items'          => 'Todas os Trabalhos',
+				'search_items'       => 'Buscar Trabalhos',
+				'parent_item_colon'  => '',
+				'not_found'          => 'Nenhum Trabalho encontrado',
+				'not_found_in_trash' => 'Nenhum Trabalho encontrado na lixeira' 
+			);
+
+			$args = array(
+				'labels'             => $labels,
+				'public'             => true,
+				'publicly_queryable' => true,
+				'show_ui'            => true,
+				'show_in_menu'       => true,
+				'query_var'          => true,
+				'rewrite'            => array( 'slug' => 'trabalho' ),
+				'capability_type'    => 'post',
+				'has_archive'        => true,
+				'hierarchical'       => false,
+				'menu_position'      => null,
+
+				'menu_icon' => 'dashicons-images-alt2',
+		  		'supports' => array( 'title', 'thumbnail', 'editor' )
+			);
+
+			register_post_type( 'trabalho', $args );
+		}
+		add_action( 'init', 'trabalhos_cpt' );
+	/////////////////////////////////////////////////////////////////////////
+
 	/////////////////////////////////////////////////////////////////////////////
 	//slide_fotos para exibir posts com thumbnail como shotcode
 	// remove_filter( 'the_content', 'wpautop' );
