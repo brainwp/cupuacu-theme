@@ -54,20 +54,21 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. 
 					</p>
 					<?php
-					$count=0;
-					$args = array(
-					    'post_type' => 'trabalho',
-					);
-					$trabalho_query = new  WP_Query( $args );
+					// $count=0;
+					// 					$args = array(
+					// 					    'post_type' => 'trabalho',
+					// 					);
+					// $trabalho_query = new  WP_Query( $args );
 					?>
 				      <ul>
-						<?php while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
-							echo '<li><a href="'.get_the_permalink().'"><img class="lupa" src="'.get_stylesheet_directory_uri().'/imagens/lupa.png"></a><div class="capa"><a href="'.get_the_permalink().'">';
-							the_post_thumbnail('');
-							echo '</a></div>';
-							the_title();
-							echo '</li>';
-						endwhile;
+						<?php // while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
+						// 							echo '<li><a href="'.get_the_permalink().'"><img class="lupa" src="'.get_stylesheet_directory_uri().'/imagens/lupa.png"></a><div class="capa"><a href="'.get_the_permalink().'">';
+						// 							the_post_thumbnail('');
+						// 							echo '</a></div>';
+						// 							the_title();
+						// 							echo '</li>';
+						// 						endwhile;
+						// 						wp_reset_query();
 						?>
 						</ul>
 						<div class="limpa"></div>

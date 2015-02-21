@@ -13,11 +13,37 @@ function registra_menus() {
   register_nav_menus(
     array(
     	'front-menu' => __( 'Front Menu' ),
-		'front-footer-menu' => __( 'Front Footer Menu' ),
+
     )
   );
 }
 add_action( 'init', 'registra_menus' );
+function registra_menus2() {
+  register_nav_menus(
+    array(
+		'footer-menu' => __( 'Footer Menu' )
+
+    )
+  );
+}
+add_action( 'init', 'registra_menus2' );
+
+
+///coloca bolg e mail no menu
+add_filter( 'wp_nav_menu_items', 'adiciona_itens', 10, 2 );
+
+function adiciona_itens ( $items, $args ) {
+	if ($args->theme_location == 'front-menu'){
+			$items2 = $items;
+			$items 	= '<li id="mail-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
+			$items .= '<li id="blog-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></li>';
+			$items .= $items2;
+	}
+	return $items;
+	
+}
+
+
 
 //menu walker
 class CSS_Menu_Maker_Walker extends Walker {
@@ -83,15 +109,7 @@ class CSS_Menu_Maker_Walker extends Walker {
 
 ////
 
-add_filter( 'wp_nav_menu_items', 'adiciona_itens', 10, 2 );
-function adiciona_itens ( $items, $args ) {
-		$items2 = $items;
-		$items 	= '<li id="mail-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
-		$items .= '<li id="blog-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></li>';
-		$items .= $items2;
-        
-    return $items;
-}
+
 
 
 

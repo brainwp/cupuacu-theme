@@ -99,7 +99,7 @@
 					<span class='helper'></span>
 					<?php 
 					wp_nav_menu(array(
-				  		'menu' => 'Front Menu', 
+						'theme_location'  => 'front-menu',
 				  		'container' => false, 
 				  		'walker' => new CSS_Menu_Maker_Walker()
 							)); 
@@ -130,6 +130,8 @@
 						echo '</li>';
 						$count++;
 					endwhile;
+					wp_reset_query();
+					
 					?>
 			      </ul>
 			      <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous" disabled="disabled">Previous</button>

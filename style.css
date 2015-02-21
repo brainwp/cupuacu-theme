@@ -1780,34 +1780,114 @@ p{
 	text-align:center;
 }
 #linha6{
-	height:665px;
 	background:url('imagens/linha6-fundo.png');
 	background-size:contain;
 	background-repeat:no-repeat;
+	padding-top:48%;
 }
 #linha7{
 	margin-top:-10px;
 	background:#cfa86a;
 }
+#rodape-front a{
+	color:#1e1e1e;
+}
+
 .coluna-footer{
 	display:inline-block;
 	width:30%;
 	vertical-align:top;
 }
+
+
+
+
+.efeito
+{
+margin-top:-90px;
+  position: relative;
+}
+.efeito:before
+{
+  z-index: 0
+;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 0px;
+  width: 54%;
+  top: 80%;
+  max-width:200px;
+  max-height:18px;
+  background: transparent;
+  -webkit-box-shadow: 0 15px 22px #120900;
+  -moz-box-shadow: 0 15px 22px #120900;
+  box-shadow: 0 15px 22px #120900;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+
+
+
+
+
+
 #coluna1 img{
-	margin-top:-90px;
-	position:relative;
-	z-index:99;
+
+		position:relative;
+		z-index:99;
+}
+#coluna1 ul{
+	margin:30px 0 0 30px;
+}
+#coluna1 ul a{
+	line-height:30px;
+	color:#1e1e1e;
+	font-size:18px;
+	font-weight:lighter;
+	text-transform:capitalize;
+	
+}
+#coluna2 a {
+	text-transform:none;
 }
 #coluna2 span{
 	font-size:14px;
+	vertical-align: top;
+	margin-top: 18px;
+}
+.veja{
+	display:block;
+}
+.post-recente{
+	line-height:20px;
+	margin-top:36px;
+	border-left:solid 2px #6e0f08;
+	padding-left:20px;
+	font-size: 18px;
+}
+.post-recente span{
+	font-size:11px;
+	margin-top:10px;
+	font-weight:lighter;
 }
 #coluna3 img{
 	vertical-align: bottom;
 	margin-bottom: -40px;
+	float: right;
+	
 }
 #coluna3{
-	float:right;
+	width:38%;
+	vertical-align:bottom;
+	
+}
+#linha8 img{
+	width:100%;
 }
 
 
