@@ -1558,8 +1558,8 @@ code {
 	margin-right:3%;
 	
 }
-#menu-menu-front{
-	width:100%;
+#menu-menu-front {
+	width: 94%;
 }
 
 #front-page .anythingSlider{
@@ -1759,10 +1759,10 @@ p{
 }
 .lupa{
 	visibility:hidden;
-	position:relative;
-	top:130px;
+	position:absolute;
 	z-index: 999;
-	
+	margin-top: 6.8%;
+	margin-left: 6.8%;
 	text-align:center;
 	
 }
@@ -1924,7 +1924,7 @@ margin-top:-90px;
 	}
 	#menu-menu-front #mail-front{
 		margin-left:3%;
-		margin-right:4%;
+		margin-right:0%;
 	}
 	#selecao-dancas h2 {
 		font-size: 31px;
@@ -1957,7 +1957,7 @@ margin-top:-90px;
 		padding: 0 10px;
 	}
 	#cssmenu > ul > li > a {
-		font-size:1.2em;
+		font-size:1.1em;
 	}
 	#blog-front{
 		height:43px;
@@ -1987,6 +1987,9 @@ margin-top:-90px;
 @media (max-width: 900px) {
 	.interno h1{
 		font-size:30px;
+	}
+	#menu-menu-front {
+		width: 92%;
 	}
 	.hexagon{
 		height:24px;
@@ -2036,5 +2039,56 @@ margin-top:-90px;
 	#selecao-dancas ul {
 		width: 91%;
 	}
+	#coluna2 img{
+		max-width: 102px;
+		
+	}
 	
+}
+@media (max-width: 740px) {
+	#cssmenu ul{
+		display:none;
+	}
+	#linha-slider{
+		padding:0;
+	}
+	.hr.header{
+		margin-top:-10px;
+	}
+	.hr{
+		height:14px;
+	}
+	.wallop-slider__btn{
+		top:27px;
+		position:absolute;
+	}
+	.btn--previous{
+		left:10px;
+	}
+	.btn--next{
+		right: 10px;
+		
+	}
+	.interno > * {
+		width:100%!important;
+	}
+	#linha1 h1{
+		margin-bottom: 10px;
+	}
+	.hexagon{
+		width:150px !important;
+	}
+	#conteudo-dancas{
+		margin:0;
+	}
+	#linha5 ul {
+	margin: 20px 0 0;
+	}
+	#linha5 li{
+		margin:0;
+		float:none;
+	}
+	#linha5 li:nth-child(2){
+		margin:0 10px;
+	}
 }

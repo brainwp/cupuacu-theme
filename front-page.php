@@ -9,6 +9,7 @@
 					
 				</div><!--fecha interno-->
 			</div><!-- fecha linha1-->
+			<div class="limpa"></div>
 
 			<div id="linha2" class="linha">
 				<div class="interno">
@@ -30,11 +31,13 @@
 						
 				</div><!--fecha interno-->
 			</div><!-- fecha linha2-->
+			<div class="limpa"></div>
 
 			<div id="linha3" class="linha">
 				<div class="interno">
 				</div><!--fecha interno-->
 			</div><!-- fecha linha3-->
+			<div class="limpa"></div>
 
 			<div id="linha4" class="linha">
 				<div class="interno">
@@ -46,6 +49,7 @@
 				<div class="limpa hr" ></div>
 				
 			</div><!-- fecha linha4-->
+			<div class="limpa"></div>
 
 			<div id="linha5" class="linha">
 				<div class="interno">
@@ -74,6 +78,7 @@
 				</div><!--fecha interno-->
 				
 			</div><!-- fecha linha5-->
+			<div class="limpa"></div>
 			
 			<div id="linha6" class="linha">
 				<div class="interno">

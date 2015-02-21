@@ -3,6 +3,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="viewport" content="width=device-width">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	/*
@@ -136,7 +137,9 @@
 			      </ul>
 			      <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous" disabled="disabled">Previous</button>
 			      <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next">Next</button>
+				<div class="limpa" ></div>
+				
 			    </div>
 		</div><!--linha slider-->
-		<div class="limpa hr" ></div>
+		<div class="limpa hr header" ></div>
 		<div id="conteudo-front">
