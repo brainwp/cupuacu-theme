@@ -1725,7 +1725,7 @@ p{
 }
 #linha5{
 	background:url('imagens/trabalhos-fundo.png');
-	
+	margin-top:-10px;
 }
 #linha5 h1{
 	line-height:70px;
@@ -1747,20 +1747,33 @@ p{
 	width:60%;
 }
 #linha5 li{
-	margin-left:20px;
 	width:28%;
+	margin-left:20px;
 
 }
-#linha5 li img{
+#linha5 li .attachment-{
 	width:100%;
 	height:auto;
+	display:block;
+	
+}
+.lupa{
+	visibility:hidden;
+	position:relative;
+	top:130px;
+	z-index: 999;
+	
+	text-align:center;
+	
 }
 .capa{
 	margin-bottom:15px;
-	
 }
-#linha5 li:hover .capa{
-	opacity:0.2;
+#linha5 li:hover .lupa{
+	visibility:visible;
+}
+#linha5 li:hover .attachment-{
+	opacity:0.4;
 }
 #linha5 li {
 	font-size:15px;
@@ -1769,6 +1782,32 @@ p{
 #linha6{
 	height:665px;
 	background:url('imagens/linha6-fundo.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#linha7{
+	margin-top:-10px;
+	background:#cfa86a;
+}
+.coluna-footer{
+	display:inline-block;
+	width:30%;
+	vertical-align:top;
+}
+#coluna1 img{
+	margin-top:-90px;
+	position:relative;
+	z-index:99;
+}
+#coluna2 span{
+	font-size:14px;
+}
+#coluna3 img{
+	vertical-align: bottom;
+	margin-bottom: -40px;
+}
+#coluna3{
+	float:right;
 }
 
 
@@ -1843,9 +1882,7 @@ p{
 		
 	}
 	#linha5 li{
-		margin-right:14px;
-	
-
+		margin-left:14px;
 	}
 }
 @media (max-width: 900px) {

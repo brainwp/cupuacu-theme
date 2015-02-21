@@ -12,7 +12,8 @@ register_nav_menus( array( 'secundary' => __( 'Menu da Pagina Danca', 'twentyten
 function registra_menus() {
   register_nav_menus(
     array(
-      'front-menu' => __( 'Front Menu' ),
+    	'front-menu' => __( 'Front Menu' ),
+		'front-footer-menu' => __( 'Front Footer Menu' ),
     )
   );
 }

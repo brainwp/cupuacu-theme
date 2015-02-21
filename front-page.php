@@ -62,20 +62,25 @@
 					?>
 				      <ul>
 						<?php while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
-							echo '<li><div class="capa">';
+							echo '<li><a href="'.get_the_permalink().'"><img class="lupa" src="'.get_stylesheet_directory_uri().'/imagens/lupa.png"></a><div class="capa"><a href="'.get_the_permalink().'">';
 							the_post_thumbnail('');
-							echo '</div>';
+							echo '</a></div>';
 							the_title();
 							echo '</li>';
 						endwhile;
 						?>
+						</ul>
+						<div class="limpa"></div>
 				</div><!--fecha interno-->
+				
 			</div><!-- fecha linha5-->
 			
 			<div id="linha6" class="linha">
 				<div class="interno">
 				</div><!--fecha interno-->
+				
 			</div><!-- fecha linha6-->
+			
 
 
 			<?php /* get_sidebar(); */ ?> 
