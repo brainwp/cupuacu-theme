@@ -1695,6 +1695,9 @@ code {
 }
 #linha4{
 	background:url('imagens/linha4-fundo.png');
+	
+}
+#linha4 .interno{
 	padding:60px 0 60px 25px;
 	
 }
@@ -1709,10 +1712,11 @@ code {
 }
 #linha4 .interno h1{
 	width:25%;
+	vertical-align:top;
 }
 
 #linha4 .interno img{
-	width:250px;
+	width: 27%;
 	margin-left:30px;
 	vertical-align: top;
 	
@@ -1785,6 +1789,10 @@ code {
 	}
 	#front-page p {
 		font-size:18px;
+	}
+	.linha h1{
+		font-size: 53px;
+		
 	}
 }
 @media (max-width: 900px) {
