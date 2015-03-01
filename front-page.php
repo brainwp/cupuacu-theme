@@ -46,7 +46,7 @@
 					<h1 class='inline-block' >Ciclo de Festas</h1>
 					<p class='inline-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. 
 					</p>
-					<img class='inline-block' src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/img-ciclo.png">
+					<a href="ciclo-de-festas/"><img class='inline-block' src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/img-ciclo.png">
 				</div><!--fecha interno-->
 				<div class="limpa hr" ></div>
 				

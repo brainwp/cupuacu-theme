@@ -22,17 +22,20 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div id="linha-single-titulo" class="linha">
 						<div class="interno">
-							<h2 ><?php the_title(); ?></h2>
+							<h2 ><?php 
+								$post_type=get_post_type($post->ID);
+								$obj=get_post_type_object( $post_type );
+								echo $obj->labels->name;
+							 ?> / <span><?php the_title(); ?></span></h2>
 						</div>
 					</div>
 					<div id="linha-img-single" class="linha">
-						<?php the_post_thumbnail('slider-thumb');?>
+						<?php the_post_thumbnail('full');?>
 					</div><!-- fecha linha3-->
 					<div class="limpa"></div>					
 
 					<div id="linha-single-conteudo"class="linha">
 						<div class="interno">
-							<?php echo get_the_ID(); ?> 
 
 							<?php the_content(); ?>
 						</div><!--fecha interno-->

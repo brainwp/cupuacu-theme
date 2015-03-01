@@ -30,7 +30,7 @@ function adiciona_itens ( $items, $args ) {
 	if ($args->theme_location == 'front-menu'){
 			$items2 = $items;
 			$items 	= '<li id="mail-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/mail-front.png"></li>';
-			$items .= '<li id="blog-front"><img  src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></li>';
+			$items .= '<li id="blog-front"><a href="'.get_site_url().'/blog"><img  src="'.get_stylesheet_directory_uri().'/imagens/blog-front.png"></a></li>';
 			$items .= $items2;
 	}
 	return $items;
@@ -389,3 +389,6 @@ function ajax_dancas($id) {
 	echo '<br><a href="'.get_permalink( $id ).'">Leia Mais</a>';
 die();
 }
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );

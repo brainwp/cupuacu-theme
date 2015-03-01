@@ -13,10 +13,10 @@
  * @since Twenty Ten 1.0
  */
 
-get_header(); ?>
+get_header('novo'); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+		<div id="linha-single-conteudo" class="linha">
+			<div id="" class="interno" role="main">
 
 			<?php
 			/* Run the loop to output the posts.
@@ -25,8 +25,7 @@ get_header(); ?>
 			 */
 			 get_template_part( 'loop', 'index' );
 			?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+			</div><!-- .interno -->
+		</div><!-- .linha -->
 
-<?php get_sidebar(); ?>
-<?php get_footer( 'page'); ?>
+<?php get_footer( 'novo'); ?>

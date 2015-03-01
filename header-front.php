@@ -94,7 +94,7 @@
 			<div id="header">
 				<div id="logo" class="frame">
 					<span class="helper"></span>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/logo-front.png">
+					<a href="<?php echo get_site_url();?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/logo-front.png"></a>
 				</div>
 				<div id="cssmenu" class="frame menu-menu-front-container">
 					<span class='helper'></span>

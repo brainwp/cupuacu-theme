@@ -7,10 +7,10 @@
  * @since Twenty Ten 1.0
  */
 
-get_header(); ?>
+get_header('novo'); ?>
 
-	<div id="container">
-		<div id="content" role="main">
+<div id="linha-404" class="linha">
+	<div class="interno">
 
 			<div id="post-0" class="post error404 not-found">
 				<h1 class="entry-title"><?php _e( 'Not Found', 'twentyten' ); ?></h1>
@@ -20,11 +20,11 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 			</div><!-- #post-0 -->
 
-		</div><!-- #content -->
-	</div><!-- #container -->
+	</div><!-- #->.interno -->
+</div><!-- linha-404 -->
 	<script type="text/javascript">
 		// focus on search field after it has loaded
 		document.getElementById('s') && document.getElementById('s').focus();
 	</script>
 
-<?php get_footer( 'page'); ?>
+<?php get_footer( 'novo'); ?>

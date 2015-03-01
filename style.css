@@ -30,7 +30,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 body {
-	line-height: 1;
+	line-height: initial;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -221,7 +221,7 @@ input,
 textarea {
 	color: #666;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: initial;
 }
 hr {
 	background-color: #e7e7e7;
@@ -291,7 +291,7 @@ blockquote i {
 pre {
 	background: #f7f7f7;
 	color: #222;
-	line-height: 18px;
+	line-height: initial;
 	margin-bottom: 18px;
 	padding: 1.5em;
 }
@@ -342,7 +342,7 @@ textarea {
 #site-title {
 	float: left;
 	font-size: 30px;
-	line-height: 36px;
+	line-height: initial;
 	margin: 0 0 18px 0;
 	width: 700px;
 	display: none;
@@ -1574,7 +1574,7 @@ code {
 	background: url('imagens/hr-header.png');
 	width: 100%;
 	height: 29px;
-	margin-top: -77px;
+	margin-top: -15px;
 	z-index: 99;
 	position: relative;
 }
@@ -1807,8 +1807,14 @@ p{
 	margin-top:-10px;
 	background:#cfa86a;
 }
-#rodape-front a, #rodape-novo a{
+#rodape-front a, #rodape-novo a,html a:visited,html a:link{
 	color:#1e1e1e;
+}
+#rodape-front .hr, #rodape-novo .hr{
+	margin-top: -70px;
+}
+#linha-single-conteudo{
+	margin-top:-15px;
 }
 
 .coluna-footer{
@@ -1820,7 +1826,7 @@ p{
 	margin-top:60px;
 }
 #linha-single-conteudo{
-	padding-bottom:20px;
+	padding-bottom:60px;
 }
 #linha-single-titulo .interno{
 	padding:20px 40px;
@@ -1829,8 +1835,21 @@ p{
 	line-height:initial;
 	margin-bottom:0;
 }
+#conteudo-novo #linha-single-titulo{
+	background-color:#E2AF70
+}
+#linha-single-titulo span{
+	color:#1e1e1e;
+}
 #conteudo-novo .linha{
-	background-color: #E2AF70;
+	background-color: #E7C391;
+	
+}
+#linha-img-single img{
+	max-width:100%;
+	height:auto;
+	margin:0 auto;
+	display: block;
 	
 }
 
