@@ -1580,6 +1580,8 @@ code {
 }
 #linha-header{
 	background:#311901;
+	z-index: 999;
+	position: relative;
 }
 #linha-slider {
 	background: url('imagens/linha-slider-fundo.png');
@@ -1810,7 +1812,7 @@ p{
 #rodape-front a, #rodape-novo a,html a:visited,html a:link{
 	color:#1e1e1e;
 }
-#rodape-front .hr, #rodape-novo .hr{
+#rodape-front .hr, #rodape-novo .hr, .header.hr{
 	margin-top: -70px;
 }
 #linha-single-conteudo{
