@@ -1656,6 +1656,15 @@ code {
 	line-height:30px;
 	margin-top: 40px;
 }
+#conteudo-dancas a, #conteudo-dancas a:visited{
+	color:#391302;
+}
+#conteudo-dancas blockquote{
+	font-size: 0.8em;
+}
+#conteudo-dancas a:hover{
+	opacity:0.7;
+}
 #selecao-dancas{
 	width:33%;
 	margin:50px 0 30px 0;
@@ -1667,15 +1676,16 @@ code {
 }
 #selecao-dancas li a{
 	margin:0 0  25px;
-	line-height: 36px;
-	font-size: 38px;
+	line-height: initial;
+	font-size: 28px;
 	color:#391302;
 	
 }
 #selecao-dancas li{
 	padding-left:36px;
 }
-.ativo:before {
+
+.ativo:before, #selecao-dancas li:hover:before {
 	content:'';
 	background:url('imagens/seta-dancas.png');
 	width:16px;
@@ -1683,7 +1693,10 @@ code {
 	display:inline-block;
 	margin-right:20px;
 }
-#selecao-dancas li.ativo {
+ #selecao-dancas.ativo li:hover:before{
+	background:none;
+}
+#selecao-dancas li.ativo, #selecao-dancas li:hover  {
 	padding-left:0;
 }
 .ativo h2{
@@ -1910,6 +1923,12 @@ margin-top:-90px;
 }
 #linha8 img{
 	width:100%;
+}
+#loading{
+	text-align:center;
+	width: 100px;
+	margin: 0 auto;
+	display: block;
 }
 
 

@@ -10,7 +10,9 @@
 				</div><!--fecha interno-->
 			</div><!-- fecha linha1-->
 			<div class="limpa"></div>
-
+			<script type="text/javascript">
+			var templateDir = "<?php echo get_stylesheet_directory_uri() ?>";
+			</script>
 			<div id="linha2" class="linha">
 				<div class="interno">
 					<div id='conteudo-dancas' class="inline-block">
@@ -22,6 +24,7 @@
 							wp_nav_menu(array(
 								'theme_location'  => 'dancas-menu',
 						  		'container' => false, 
+						  		'walker' => new dancas_menu()
 									)); 
 							?>
 						

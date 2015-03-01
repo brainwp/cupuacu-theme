@@ -25,14 +25,14 @@
 							<h2 ><?php the_title(); ?></h2>
 						</div>
 					</div>
-					<div id="linha3" class="linha">
-						<div class="interno">
-						</div><!--fecha interno-->
+					<div id="linha-img-single" class="linha">
+						<?php the_post_thumbnail('slider-thumb');?>
 					</div><!-- fecha linha3-->
 					<div class="limpa"></div>					
 
 					<div id="linha-single-conteudo"class="linha">
 						<div class="interno">
+							<?php echo get_the_ID(); ?> 
 
 							<?php the_content(); ?>
 						</div><!--fecha interno-->
