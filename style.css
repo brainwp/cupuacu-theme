@@ -69,8 +69,9 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
 
 #container {
-	float: right;
-	margin: 0 -240px 0 0;
+	/*float: right;
+		margin: 0 -240px 0 0;*/
+	margin:0  5%;
 	width: 100%;
 }
 #content {
@@ -1516,7 +1517,7 @@ code {
 
 
 
-#front-page #header div{
+#front-page #header div, #header div{
 	display:inline-block;
 	background: #311901;
 	float:left;
@@ -1664,7 +1665,7 @@ code {
 	width: 85%;
 	float: right;
 }
-#selecao-dancas h2{
+#selecao-dancas li a{
 	margin:0 0  25px;
 	line-height: 36px;
 	font-size: 38px;
@@ -1789,7 +1790,7 @@ p{
 	margin-top:-10px;
 	background:#cfa86a;
 }
-#rodape-front a{
+#rodape-front a, #rodape-novo a{
 	color:#1e1e1e;
 }
 
@@ -1798,6 +1799,24 @@ p{
 	width:30%;
 	vertical-align:top;
 }
+#rodape-novo{
+	margin-top:60px;
+}
+#linha-single-conteudo{
+	padding-bottom:20px;
+}
+#linha-single-titulo .interno{
+	padding:20px 40px;
+}
+#linha-single-titulo h2{
+	line-height:initial;
+	margin-bottom:0;
+}
+#conteudo-novo .linha{
+	background-color: #E2AF70;
+	
+}
+
 
 
 
@@ -1973,7 +1992,7 @@ margin-top:-90px;
 		height: 21px;
 		background-size: contain;
 		}
-	#front-page p {
+	#front-page p, p {
 		font-size:18px;
 	}
 	
@@ -2024,7 +2043,7 @@ margin-top:-90px;
 	#mail-front{
 		width:28px;
 	}	
-	#front-page p {
+	#front-page p, p {
 	font-size: 16px;
 	}
 	#conteudo-dancas{

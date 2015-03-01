@@ -13,20 +13,14 @@ function registra_menus() {
   register_nav_menus(
     array(
     	'front-menu' => __( 'Front Menu' ),
+		'footer-menu' => __( 'Footer Menu' ),
+		'dancas-menu' => __( 'Danças Menu' )
 
     )
   );
 }
 add_action( 'init', 'registra_menus' );
-function registra_menus2() {
-  register_nav_menus(
-    array(
-		'footer-menu' => __( 'Footer Menu' )
 
-    )
-  );
-}
-add_action( 'init', 'registra_menus2' );
 
 
 ///coloca bolg e mail no menu
@@ -194,6 +188,48 @@ class CSS_Menu_Maker_Walker extends Walker {
 		}
 		add_action( 'init', 'trabalhos_cpt' );
 	/////////////////////////////////////////////////////////////////////////
+	
+	
+	/////////CPT dancas brasileiras
+		function dancas_cpt() {
+			$labels = array(                   
+				'name'               => 'Danças Brasileiras',
+				'singular_name'      => 'Dança',
+				'menu_name'          => 'Danças Brasileiras',
+				'name_admin_bar'     => 'Danças Brasileiras',
+				'add_new'            => 'Adicionar nova',
+				'add_new_item'       => 'Adicionar nova Dança',
+				'new_item'           => 'Nova Dança',
+				'edit_item'          => 'Editar Dança',
+				'view_item'          => 'Ver Dança',
+				'all_items'          => 'Todas as Danças',
+				'search_items'       => 'Buscar Danças',
+				'parent_item_colon'  => '',
+				'not_found'          => 'Nenhuma Dança encontrada',
+				'not_found_in_trash' => 'Nenhuma Dança encontrada na lixeira' 
+			);
+
+			$args = array(
+				'labels'             => $labels,
+				'public'             => true,
+				'publicly_queryable' => true,
+				'show_ui'            => true,
+				'show_in_menu'       => true,
+				'query_var'          => true,
+				'rewrite'            => array( 'slug' => 'dancas_bra' ),
+				'capability_type'    => 'post',
+				'has_archive'        => true,
+				'hierarchical'       => false,
+				'menu_position'      => null,
+
+				'menu_icon' => 'dashicons-format-audio',
+		  		'supports' => array( 'title', 'thumbnail', 'editor' )
+			);
+
+			register_post_type( 'dancas_bra', $args );
+		}
+		add_action( 'init', 'dancas_cpt' );
+	/////////////////////////////////////////////////////////////////////////
 
 	/////////////////////////////////////////////////////////////////////////////
 	//slide_fotos para exibir posts com thumbnail como shotcode
@@ -269,7 +305,7 @@ class CSS_Menu_Maker_Walker extends Walker {
 //////////////////////////slider tamanho////////////////////////////////////////
 //////////////////////////slider tamanho////////////////////////////////////////
 add_action( 'after_setup_theme', 'slider_img' );
-function slider_img() {
-  add_image_size( 'slider-thumb', 1247, 452, true  ); // 300 pixels wide (and unlimited height)
+function slider_img() {                                
+  add_image_size( 'slider-thumb', 1247, 452, true  ); 
 }//////////////////////////slider tamanho////////////////////////////////////////
 //////////////////////////slider tamanho////////////////////////////////////////

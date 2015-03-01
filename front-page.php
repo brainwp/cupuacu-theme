@@ -18,15 +18,14 @@
 						<p>Donec dapibus justo dui. Etiam euismod bibendum justo sit amet mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Donec dapibus justo dui. Etiam euismod bibendum justo sit amet mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
 					</div> <!--fecha conteudo-->
 					<div id="selecao-dancas"class="inline-block">
-						<ul>
-							<li class="ativo"><h2>Bumba Meu Boi</h2></li>
-							<li><h2>Ciranda</h2></li>
-							<li><h2>Coco de Roda</h2></li>
-							<li><h2>Dança do lele</h2></li>
-							<li><h2>Quadrilha</h2></li>
-							<li><h2>Cacuriá e Caroço</h2></li>
-							
-							
+							<?php 
+							wp_nav_menu(array(
+								'theme_location'  => 'dancas-menu',
+						  		'container' => false, 
+									)); 
+							?>
+						
+						
 					</div>
 						
 				</div><!--fecha interno-->
@@ -60,6 +59,7 @@
 					<?php
 					$count=0;
 					$args = array(
+						'posts_per_page' => 3,
 					    'post_type' => 'trabalho',
 					);
 					$trabalho_query = new  WP_Query( $args );

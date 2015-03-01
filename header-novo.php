@@ -3,6 +3,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="viewport" content="width=device-width">
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	/*
@@ -28,7 +29,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_directory') ?>/estilo.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_directory') ?>/estilos/slider_destaque.css" />
 
  <!-- jQuery (required) -->
  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" type="text/css" />
@@ -42,18 +42,19 @@
  <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ?>/estilos/anythingslider.css" type="text/css" media="screen" />
  <script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/jquery.anythingslider.js"></script>
  
+ 
    <!-- Anything Slider optional FX extension -->
  <script src="<?php echo bloginfo('stylesheet_directory') ?>/js/jquery.anythingslider.fx.min.js" type="text/javascript"></script>
  
  <!-- This page only -->
- <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ?>/estilos/slider_destaque.css" type="text/css" media="screen" />
  <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory') ?>/colorbox/colorbox.css" type="text/css" media="screen" />
  <script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/cupuacu_destaque.js"></script>
  <script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/colorbox/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/custom.js"></script>
 
 <!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=PT+Sans:700|Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+
 <!-- Google Analytics -->
 <script type="text/javascript">
 
@@ -86,11 +87,27 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-	<div id="header">
-
-	</div><!-- #header -->
-
-	
-<div id="home">
+<body id="<?php global $post; echo $post->post_name; ?>
+" <?php body_class(); ?>>
+	<div id="" class="hfeed">
+		<div id="linha-header">
+			<div id="header">
+				<div id="logo" class="frame">
+					<span class="helper"></span>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/logo-front.png">
+				</div>
+				<div id="cssmenu" class="frame menu-menu-front-container">
+					<span class='helper'></span>
+					<?php 
+					wp_nav_menu(array(
+						'theme_location'  => 'front-menu',
+				  		'container' => false, 
+				  		'walker' => new CSS_Menu_Maker_Walker()
+							)); 
+					?>
+			
+				</div>
+			</div><!-- #header -->
+		</div><!--linha header-->
+		
+		<div id="conteudo-novo">
