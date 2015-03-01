@@ -5,7 +5,7 @@
 		li=$(this).parent();
 		
 			$.ajax({
-				url: ajaxpagination.ajaxurl,
+				url: ajaxdancas.ajaxurl,
 				type: 'post',
 				data: {
 					action: 'ajax_dancas',

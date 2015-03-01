@@ -372,8 +372,8 @@ function tamanho_imagens() {
 }//////////////////////////slider tamanho////////////////////////////////////////
 //////////////////////////slider tamanho////////////////////////////////////////
 function my_enqueue_assets() {
-     wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
-	wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
+     wp_enqueue_script( 'ajax-dancas',  get_stylesheet_directory_uri() . '/js/ajax-dancas.js', array( 'jquery' ), '1.0', true );
+	wp_localize_script( 'ajax-dancas', 'ajaxdancas', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' )
 	));
 }
