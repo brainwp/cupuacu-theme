@@ -1651,7 +1651,7 @@ code {
 	display:inline-block;
 }
 #conteudo-dancas{
-	width:66%;
+	width:60%;
 	vertical-align: top;
 	line-height:30px;
 	margin-top: 40px;
@@ -1660,13 +1660,17 @@ code {
 	color:#391302;
 }
 #conteudo-dancas blockquote{
+	margin-bottom: 30px;
 	font-size: 0.8em;
+}
+#conteudo-dancas a{
+	text-decoration:underline;
 }
 #conteudo-dancas a:hover{
 	opacity:0.7;
 }
 #selecao-dancas{
-	width:33%;
+	width:39%;
 	margin:50px 0 30px 0;
 	
 }
@@ -1964,7 +1968,7 @@ margin-top:-90px;
 		margin-left:3%;
 		margin-right:0%;
 	}
-	#selecao-dancas h2 {
+	#selecao-dancas li a{
 		font-size: 31px;
 	}
 }
@@ -2003,10 +2007,10 @@ margin-top:-90px;
 	#mail-front{
 		width:32px;
 	}
-	#selecao-dancas h2 {
+	#selecao-dancas li a{
 		font-size: 25px;
 	}
-	.ativo:before {
+	.ativo:before, #selecao-dancas li:hover:before {
 		width: 12px;
 		height: 21px;
 		background-size: contain;
@@ -2071,7 +2075,7 @@ margin-top:-90px;
 	#selecao-danca{
 		width:45%;
 	}
-	#selecao-dancas h2 {
+	#selecao-dancas li a {
 		font-size: 20px;
 	}
 	#selecao-dancas ul {
