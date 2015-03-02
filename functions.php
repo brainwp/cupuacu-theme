@@ -1,4 +1,6 @@
 <?php 
+// options //
+require_once get_stylesheet_directory() . '/inc/options.php';
 /* Redefine the header image width and height ********************************************/
 define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width', 1000 ) );
 define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height', 255 ) );
@@ -378,6 +380,12 @@ function my_enqueue_assets() {
 	));
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_assets' );
+
+function admin_scripts() {
+	wp_enqueue_style( 'odin-admin-css', get_stylesheet_directory_uri() . '/estilos/odin-admin.css' );
+	wp_enqueue_script( 'odin-admin-js',  get_stylesheet_directory_uri() . '/js/odin-admin.js', array( 'jquery' ), '1.0', true );
+}
+add_action( 'admin_enqueue_scripts', 'admin_scripts' );
 ////
 add_action( 'wp_ajax_nopriv_ajax_dancas', 'ajax_dancas' );
 add_action( 'wp_ajax_ajax_dancas', 'ajax_dancas' );
@@ -388,6 +396,21 @@ function ajax_dancas($id) {
 	echo substr($post->post_content, 0,400).' ...';
 	echo '<br><a href="'.get_permalink( $id ).'">Leia Mais</a>';
 die();
+}
+function random_home_image(){
+	global $home_img;
+	if(empty($home_img) || !is_array($home_img)){
+		$home_img = get_option('home_cfg');
+		$home_img = $home_img['home_random'];
+		$home_img = explode(',', $home_img);
+		//var_dump($home_img);
+	}
+	$rand = array_rand($home_img);
+	$id = $home_img[$rand];
+	unset($home_img[$rand]);
+	$post = get_post($id);
+	$url = wp_get_attachment_image_src($id, 'large');
+	return array('autor' => $post->post_content, 'url' => $url[0], 'height' => $url[2] );
 }
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
