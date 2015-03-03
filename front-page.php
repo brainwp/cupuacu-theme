@@ -36,7 +36,7 @@
 			<div class="limpa"></div>
 
 			<?php $random_img = random_home_image(); ?>
-			<div id="linha3" class="linha" style="background-image:url(<?php echo $random_img['url'];?>);height:<?php echo $random_img['height'];?>px;">
+			<div id="linha3" class="linha" style="background-image:url(<?php echo $random_img['url'];?>);">
 				<div class="interno">
 				</div><!--fecha interno-->
 			</div><!-- fecha linha3-->
@@ -85,7 +85,7 @@
 			<div class="limpa"></div>
 			
 			<?php $random_img = random_home_image(); ?>
-			<div id="linha6" class="linha" style="background-image:url(<?php echo $random_img['url'];?>);height:<?php echo $random_img['height'];?>px;">
+			<div id="linha6" class="linha" style="background-image:url(<?php echo $random_img['url'];?>);">
 				<div class="interno">
 				</div><!--fecha interno-->
 				

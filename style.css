@@ -1799,11 +1799,11 @@ p{
 	font-size:15px;
 	text-align:center;
 }
-#linha6{
-	background:url('imagens/linha6-fundo.png');
-	background-size:contain;
+
+#linha6, #linha3{
+	background-size:cover;
 	background-repeat:no-repeat;
-	padding-top:48%;
+	height:35vw;
 }
 #linha7{
 	margin-top:-10px;
