@@ -286,7 +286,8 @@ blockquote {
 blockquote cite,
 blockquote em,
 blockquote i {
-	font-style: normal;
+	font-style: italic;
+	font-size:0.8em;
 }
 pre {
 	background: #f7f7f7;
@@ -2199,4 +2200,34 @@ html .slick-slider {
 	border:none;
 	box-shadow:none;
 	line-height:20px;
+}
+.zilla-toggle-inner img{
+	width:100%;
+	border-radius:5px;
+}
+html .ui-accordion .ui-accordion-header .ui-icon {
+left:initial;
+position: absolute;
+right: 0.5em;
+top: 0;
+}
+html .zilla-toggle-title {
+background: none repeat scroll 0 0 #E2AF70;
+color:#91441E;
+font-size:1em;
+}
+html .zilla-toggle {
+display: block;
+background: none repeat scroll 0 0 #311901;
+border: 1px solid #311901!important;
+}
+html .zilla-toggle-inner {
+background: none repeat scroll 0 0 #311901;
+color: #FFFFFF;
+}
+#interno-pag-dancas{
+	padding-bottom:75px;
+}
+#interno-pag-dancas h2{
+	margin:10px 0;
 }
