@@ -109,37 +109,8 @@
 				</div>
 			</div><!-- #header -->
 		</div><!--linha header-->
-		<div id="linha-slider" >
-			<div class="photo-slider wallop-slider wallop-slider--slide">
-				<?php
-				$count=0;
-				$args = array(
-				    'post_type' => 'slide',
-				);
-				$slider_query = new  WP_Query( $args );
-				?>
-			      <ul class="wallop-slider__list">
-					<?php while ( $slider_query->have_posts() ) : $slider_query->the_post();
-						echo '<li class="wallop-slider__item ';
-						if ($count ==0){
-							echo 'wallop-slider__item--current">';
-						}
-						else{
-							echo '">';
-						}
-						the_post_thumbnail('slider-thumb');
-						echo '</li>';
-						$count++;
-					endwhile;
-					wp_reset_query();
-					
-					?>
-			      </ul>
-			      <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous" disabled="disabled">Previous</button>
-			      <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next">Next</button>
-				<div class="limpa" ></div>
-				
-			    </div>
-		</div><!--linha slider-->
+		<?php 
+		echo do_shortcode('[brasa_slider name="home"]"');
+		?>
 		<div class="limpa hr header" ></div>
 		<div id="conteudo-front">

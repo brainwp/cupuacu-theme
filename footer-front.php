@@ -7,8 +7,13 @@
 				<div class="interno">
 					<div class="coluna-footer" id="coluna1">
 						<div class="efeito">
-						    <img src="<?php echo bloginfo('stylesheet_directory') ?>/imagens/retangulo-footer.png">
-							
+						    <img id="tecido" src="<?php echo bloginfo('stylesheet_directory') ?>/imagens/tecido.png">
+						    <img id="logo-rodape" src="<?php echo bloginfo('stylesheet_directory') ?>/imagens/logo-front.png">
+							<div id="texto-caixa-rodape">
+								<?php $teste = get_option('home_cfg');
+								echo $teste['caixa'];
+								?>
+							</div>
 						</div>
 						
 						
@@ -57,7 +62,6 @@
 		</div><!-- fecha rodape-front -->
 
 	</div><!-- .hfeed -->
-	<script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/wallopslider.js"></script>
  	<script type="text/javascript" src="<?php echo bloginfo('stylesheet_directory') ?>/js/script.js"></script>
 <?php wp_footer();?>
 </body>

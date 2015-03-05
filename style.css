@@ -1571,11 +1571,12 @@ code {
 	float:none;
 }
 .hr {
+	z-index: 999;
+	
 	background: url('imagens/hr-header.png');
 	width: 100%;
 	height: 29px;
 	margin-top: -15px;
-	z-index: 99;
 	position: relative;
 }
 #linha-header{
@@ -1689,6 +1690,8 @@ code {
 }
 #selecao-dancas li{
 	padding-left:36px;
+	text-align:left;
+	
 }
 
 .ativo:before, #selecao-dancas li:hover:before {
@@ -1803,7 +1806,7 @@ p{
 #linha6, #linha3{
 	background-size:cover;
 	background-repeat:no-repeat;
-	height:35vw;
+	height:40vw;
 }
 #linha7{
 	margin-top:-10px;
@@ -1813,7 +1816,7 @@ p{
 	color:#1e1e1e;
 }
 #rodape-front .hr, #rodape-novo .hr, .header.hr{
-	margin-top: -70px;
+	margin-top: -34px;
 }
 #linha-single-conteudo{
 	margin-top:-15px;
@@ -1824,8 +1827,31 @@ p{
 	width:30%;
 	vertical-align:top;
 }
+#logo-rodape{
+	position: absolute;
+	left: 0;
+	width: 215px;
+	margin-left: 32px;
+	top: 16px;
+	z-index:999999;
+}
+#texto-caixa-rodape{
+	position: absolute;
+	bottom: 5px;
+	z-index: 9999;
+	padding: 18px;
+	width: 244px;
+	height: 81px;
+	color:#391302;
+}
+
+#texto-caixa-rodape h5, #texto-caixa-rodape h6{
+	margin:5px 0 ;
+	color:#391302;
+	
+}
 #rodape-novo{
-	margin-top:60px;
+/*	margin-top:60px;*/
 }
 #linha-single-conteudo{
 	padding-bottom:60px;
@@ -1851,23 +1877,17 @@ p{
 	max-width:100%;
 	height:auto;
 	margin:0 auto;
-	display: block;
-	
+	display: block;	
 }
-
-
-
-
-
-.efeito
-{
-margin-top:-90px;
-  position: relative;
+.efeito{
+	margin-top:-90px;
+  	position: relative;
+	z-index: 9999;
+	
 }
 .efeito:before
 {
-  z-index: 0
-;
+  z-index: 0;
   position: absolute;
   content: "";
   bottom: 15px;
@@ -1888,12 +1908,7 @@ margin-top:-90px;
 }
 
 
-
-
-
-
-
-#coluna1 img{
+#tecido{
 		max-width:280px;
 		width:100%;
 		position:relative;
@@ -1955,11 +1970,25 @@ margin-top:-90px;
 	margin: 0 auto;
 	display: block;
 }
+.wallop-slider .btn{
+	background: url('imagens/sprite.png');
+	font-size: 0;
+	border: none;
+	width: 15px;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	}
+.wallop-slider .wallop-slider__btn--previous {
+	background-position: 15px 0;
+	
+}
+.btn--next{
+	
+}
 
 
-
-
-
+/*correcoes*/
 
 
 
@@ -2115,12 +2144,6 @@ margin-top:-90px;
 	#linha-slider{
 		padding:0;
 	}
-	.hr.header{
-		margin-top:-10px;
-	}
-	.hr{
-		height:14px;
-	}
 	.wallop-slider__btn{
 		top:27px;
 		position:absolute;
@@ -2154,4 +2177,26 @@ margin-top:-90px;
 	#linha5 li:nth-child(2){
 		margin:0 10px;
 	}
+}
+html .slick-next{
+	right:0;
+}
+html .slick-prev{
+	left:0;
+}
+.slick-list{
+	height:30vw;
+}
+
+
+html .slick-slide img{
+	overflow:hidden;
+}
+html .slick-slider {
+	margin-bottom: 0px;
+}
+.wpcf7 input, .wpcf textarea{
+	border:none;
+	box-shadow:none;
+	line-height:20px;
 }

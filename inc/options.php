@@ -26,6 +26,16 @@ $odin_theme_options->set_fields(
                     'type' => 'image_plupload',
                     //'description' => __( 'Descrition Example', 'odin' )
                 ),
+				array(
+				    'id'          => 'caixa', // Obrigatório
+				    'label'       => __( 'Informações da caixa do rodapé', 'odin' ), // Obrigatório
+				    'type'        => 'editor', // Obrigatório
+				    'default'     => 'Default text', // Opcional
+				    'description' => __( 'Descrition Example', 'odin' ), // Opcional
+				    'options'     => array( // Opcional (aceita argumentos do wp_editor)
+				        'textarea_rows' => 10
+				    ),
+				)
             )
         ),
     )
