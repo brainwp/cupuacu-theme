@@ -13,7 +13,7 @@ Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-backgr
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
-
+a{text-decoration:none}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1493,7 +1493,7 @@ code {
 }
 #cssmenu ul li:hover > a,
 #cssmenu ul li.active > a {
-  color: #ffe6be;
+  color: #91441E;
 }
 #cssmenu ul li.has-sub > a:after {
   margin-left: 5px;
@@ -1668,10 +1668,12 @@ code {
 	font-size: 0.8em;
 }
 #conteudo-dancas a{
-	text-decoration:underline;
+	text-decoration:none;
 }
 #conteudo-dancas a:hover{
 	opacity:0.7;
+	text-decoration:underline;
+	
 }
 #selecao-dancas{
 	width:39%;
@@ -1742,7 +1744,9 @@ p{
 	width: 27%;
 	margin-left:30px;
 	vertical-align: top;
-	
+}
+#linha4 .interno img:hover{
+	opacity:0.5;
 }
 #linha4 .hr{
 	margin-top:-10px;
@@ -2231,4 +2235,13 @@ color: #FFFFFF;
 #interno-pag-dancas h2{
 	margin:10px 0;
 	
+}
+.hexagon a:hover{
+	text-decoration:underline;
+}
+.veja:hover{
+	text-decoration:underline;
+}
+#menu-footer-menu a:hover, #menu-footer-menu .current-menu-item{
+	opacity:0.5;
 }

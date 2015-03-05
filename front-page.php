@@ -4,7 +4,14 @@
 				<div class="interno">
 					<h1>Danças Brasileiras</h1>
 					<div class="hexagon">
-						<h3>Ver Mais</h3>
+						
+						<h3><a href="<?php
+						$pages = get_pages(array(
+						    'meta_key' => '_wp_page_template',
+						    'meta_value' => 'page-dancas_bra.php'
+						));
+						echo $pages[0]->post_name;
+						?>"> Ver Mais</a></h3>
 					</div>
 					
 				</div><!--fecha interno-->
