@@ -29,8 +29,14 @@
 							<?php while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
 								$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 								$shortcode= '[zilla_toggle title="'.get_the_title().'"';
-								$shortcode .=' state="closed"]<img src="'.$thumb[0].'">';
-								$shortcode .= get_the_content().'[/zilla_toggle]';
+								
+								if ($thumb!=""){
+									$shortcode .=' state="closed"]<img src="'.$thumb[0].'">';
+																}
+								else{
+									$shortcode .=' state="closed"]';
+								}
+								$shortcode .= get_the_excerpt().'[/zilla_toggle]';
 								echo do_shortcode($shortcode);
 							endwhile;
 							?>

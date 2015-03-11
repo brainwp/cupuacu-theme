@@ -541,7 +541,7 @@ div.menu li {
 	padding: 18px 20px;
 }
 .single .hentry {
-	margin: 0 0 36px 0;
+	margin: 0 0 20px 0;
 }
 .page-title {
 	color: #000;
@@ -2225,7 +2225,7 @@ display: block;
 background: none repeat scroll 0 0 #311901;
 border: 1px solid #311901!important;
 }
-html .zilla-toggle-inner {
+html .zilla-toggle-inner, html .zilla-toggle-inner a {
 background: none repeat scroll 0 0 #311901;
 color: #FFFFFF;
 }
@@ -2244,4 +2244,13 @@ color: #FFFFFF;
 }
 #menu-footer-menu a:hover, #menu-footer-menu .current-menu-item{
 	opacity:0.5;
+}
+.saiba:hover{
+	opacity:0.5;
+}
+.saiba{
+	display:block;
+	text-transform:uppercase;
+	margin:10px 0 0 10px;
+	font-size:0.7em;
 }

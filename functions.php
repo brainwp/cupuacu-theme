@@ -412,6 +412,17 @@ function random_home_image(){
 	$url = wp_get_attachment_image_src($id, 'large');
 	return array('autor' => $post->post_content, 'url' => $url[0], 'height' => $url[2] );
 }
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
+// Replaces the excerpt "more" text by a link
+// Replaces the excerpt "more" text by a link
+function child_theme_setup() {
+	// override parent theme's 'more' text for excerpts
+	remove_filter( 'excerpt_more', 'twentyten_auto_excerpt_more' ); 
+	remove_filter( 'get_the_excerpt', 'twentyten_custom_excerpt_more' );
+}
+add_action( 'after_setup_theme', 'child_theme_setup' );
+function new_excerpt_more($more) {
+       global $post;
+	return '...<a class="saiba" href="'. get_permalink($post->ID) . '"> Saiba Mais</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('show_admin_bar', '__return_false');
