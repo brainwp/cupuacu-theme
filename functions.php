@@ -426,3 +426,21 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('show_admin_bar', '__return_false');
+
+///////////titulo no slider
+function slider_titulo($str){
+  	global $brasa_slider_id, $brasa_slider_item_id;
+	
+    
+  if(get_the_title($brasa_slider_id) != 'home'){
+	return $str;
+	}
+ else{
+    	$the_post = get_post($brasa_slider_item_id);
+		$permalink = get_permalink( $brasa_slider_item_id);
+		$str .= "<div class='titulo-slider'>".$the_post->post_title."<p>".$the_post->post_excerpt."</p></div>";
+		return $str;
+	}
+}
+add_filter('brasa_slider_loop_after_image','slider_titulo');
+

@@ -10,8 +10,8 @@
 						    <img id="tecido" src="<?php echo bloginfo('stylesheet_directory') ?>/imagens/tecido.png">
 						    <img id="logo-rodape" src="<?php echo bloginfo('stylesheet_directory') ?>/imagens/logo-front.png">
 							<div id="texto-caixa-rodape">
-								<?php $teste = get_option('home_cfg');
-								echo $teste['caixa'];
+								<?php $caixa = get_option('home_cfg');
+								echo $caixa['caixa'];
 								?>
 							</div>
 						</div>

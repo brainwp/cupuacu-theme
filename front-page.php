@@ -1,5 +1,7 @@
 			<?php get_header('front'); ?>
-
+				<?php 
+				$home_cfg = get_option('home_cfg');
+				?>
 			<div id="linha1" class="linha">
 				<div class="interno">
 					<h1>Danças Brasileiras</h1>
@@ -23,8 +25,8 @@
 			<div id="linha2" class="linha">
 				<div class="interno">
 					<div id='conteudo-dancas' class="inline-block">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>
-						<p>Donec dapibus justo dui. Etiam euismod bibendum justo sit amet mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Donec dapibus justo dui. Etiam euismod bibendum justo sit amet mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+						<?php echo $home_cfg['texto_dancas'];?>
+						
 					</div> <!--fecha conteudo-->
 					<div id="selecao-dancas"class="inline-block">
 							<?php 
@@ -52,7 +54,8 @@
 			<div id="linha4" class="linha">
 				<div class="interno">
 					<h1 class='inline-block' >Ciclo de Festas</h1>
-					<p class='inline-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. 
+					<p class='inline-block'><?php echo $home_cfg['texto_ciclo'];?>
+					
 					</p>
 					<a href="ciclo-de-festas/"><img class='inline-block' src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/img-ciclo.png">
 				</div><!--fecha interno-->
@@ -65,7 +68,8 @@
 				<div class="interno">
 					<h1 class='inline-block' >Trabalhos do Grupo</h1>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor feugiat efficitur. Aenean quis vulputate mi. Suspendisse vitae massa accumsan, cursus nunc et, luctus tortor. Mm ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. 
+						<?php echo $home_cfg['texto_trabalhos'];?>
+					
 					</p>
 					<?php
 					$count=0;
@@ -77,7 +81,7 @@
 					?>
 				      <ul>
 						<?php while ( $trabalho_query->have_posts() ) : $trabalho_query->the_post();
-							echo '<li><a href="'.get_the_permalink().'"><img class="lupa" src="'.get_stylesheet_directory_uri().'/imagens/lupa.png"></a><div class="capa"><a href="'.get_the_permalink().'">';
+							echo '<li><a href="'.get_the_permalink().'"></a><div class="capa"><img class="lupa" src="'.get_stylesheet_directory_uri().'/imagens/lupa.png"><a href="'.get_the_permalink().'">';
 							the_post_thumbnail('');
 							echo '</a></div>';
 							the_title();

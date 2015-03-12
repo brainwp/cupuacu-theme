@@ -34,8 +34,36 @@ $odin_theme_options->set_fields(
 				    'description' => __( 'Descrition Example', 'odin' ), // Opcional
 				    'options'     => array( // Opcional (aceita argumentos do wp_editor)
 				        'textarea_rows' => 10
-				    ),
-				)
+						),
+				),
+				array(
+				    'id'          => 'texto_dancas', // Obrigatório
+				    'label'       => __( 'Texto da seção Danças Brasileiras', 'odin' ), // Obrigatório
+				    'type'        => 'editor', // Obrigatório
+				    'default'     => 'Default text', // Opcional
+				    'options'     => array( // Opcional (aceita argumentos do wp_editor)
+				        'textarea_rows' => 10
+   		    			),
+					),
+   				array(
+   			    	'id'          => 'texto_ciclo', // Obrigatório
+   			    	'label'       => __( 'Texto da seção Ciclo de Festas', 'odin' ), // Obrigatório
+   			    	'type'        => 'editor', // Obrigatório
+   			    	'default'     => 'Default text', // Opcional
+   			    	'options'     => array( // Opcional (aceita argumentos do wp_editor)
+   			        'textarea_rows' => 10
+   			    	),
+				),
+				array(
+				    'id'          => 'texto_trabalhos', // Obrigatório
+				    'label'       => __( 'Texto da seção Trabalhos', 'odin' ), // Obrigatório
+				    'type'        => 'editor', // Obrigatório
+				    'default'     => 'Default text', // Opcional
+				    'options'     => array( // Opcional (aceita argumentos do wp_editor)
+				        'textarea_rows' => 10
+						),
+					),
+				
             )
         ),
     )
